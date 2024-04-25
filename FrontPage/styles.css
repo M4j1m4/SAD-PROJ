@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background {
+  width: 98vw;
+  height: 150vh;
+  background: linear-gradient(to right, #000000, #747373);
+  position: relative;
+}
+
+.container {
+  display: flex;  /* Flexbox for layout */
+  align-items: flex-start;  /* Align items to top by default */
+  padding: 20px;
+  justify-content: center;  /* Center the ellipse horizontally */
+}
+
+.ellipse {
+  width: 400px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid white;
+  margin-right: 50px;
+  z-index: 10;
+}
+
+.ellipse img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.navBar {
+  display: flex; /* Use flexbox layout */
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin-top: 60px;
+  justify-content: center; /* Center align items */
+  align-items: center;
+  width: 100%; /* Allow the navBar to fill the width of the container */
+  height: 50px; /* Set a specific height */
+  background-color: transparent; /* Background color can be adjusted as needed */
+  border-radius: 5px; /* Optional: Add border radius to match container */
+  text-align: center;
+}
+
+.navBar li {
+  margin: 0 125px;
+}
+
+.navigation {
+  margin: 0; /* Add margin between each item */
+  font-size: 20px;
+  color: black; /* Adjust text color as needed */
+}
+
+.company-contacts {
+  height: 70vh;
+  width: 98vw;
+  position: relative;
+  top: 800px;
+}
+
+.contacts-nav {
+  font-family: "lexend exa";
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 90px;
+}
+
+.box {
+  position: relative;
+}
+
+.bike-container {
+  position: absolute;
+  top: 0; /* Adjust top and left for desired position */
+  left: 600px; /* Adjust for horizontal positioning */
+}
+
+.bike {
+  position: relative;
+  top: 0; /* Adjust top and left for desired overlap within container */
+  left: 600px; /* Since it's relative to the container, left: 0 positions it at the top left corner */
+  margin-bottom: 600px;
+}
+
+.bike2 {
+  position: relative;
+  top: 20px; /* Adjust top for initial position (optional) */
+  right: 400px; /* Since it's relative to the container, left: 0 positions it next to bike1 */
+  height: 100vh;
+  margin-bottom: 400px; /* Set initial margin-top to 0 for downward movement */
+  z-index: 1;
+}
+
+.bike3 {
+  position: absolute; /* Use absolute positioning to allow free movement */
+  top: 500px; /* Set top position (you can adjust as needed) */
+  right: 700px; /* Set left position (you can adjust as needed) */
+  transform: translate(-50%, -50%); /* Center the element */
+}
+
+.nav-color {
+  border: 5px solid black;
+  background-color: white;
+  z-index: 10;
+  position: fixed;
+}
