@@ -5,44 +5,31 @@
 }
 
 .background {
-  width: 98vw;
+  width: 99vw;
   height: 150vh;
   background: linear-gradient(to right, #000000, #747373);
   position: relative;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .container {
   display: flex;  /* Flexbox for layout */
-  align-items: flex-start;  /* Align items to top by default */
-  padding: 20px;
-  justify-content: center;  /* Center the ellipse horizontally */
-}
-
-.ellipse {
-  width: 400px;
-  height: 200px;
-  background-color: black;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border: 2px solid white;
-  margin-right: 50px;
-  z-index: 10;
-}
-
-.ellipse img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+  align-items: center;  /* Align items to top by default */
+  padding: 0;
+  justify-content: space-between;  /* Center the ellipse horizontally */
+  width: 100vw;
 }
 
 .navBar {
   display: flex; /* Use flexbox layout */
-  list-style: none;
+  list-style-type: none;
   padding: 0; /* Remove default padding */
-  margin-top: 60px;
+  margin: 0;
   justify-content: center; /* Center align items */
   align-items: center;
   width: 100%; /* Allow the navBar to fill the width of the container */
@@ -64,7 +51,7 @@
 
 .company-contacts {
   height: 70vh;
-  width: 98vw;
+  width: 99vw;
   position: relative;
   top: 800px;
 }
@@ -115,4 +102,81 @@
   background-color: white;
   z-index: 10;
   position: fixed;
+}
+
+@media (max-width: 767px) {
+  .container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .ellipse {
+      width: 200px;
+      height: 100px;
+      margin-right: 0;
+      margin-bottom: 20px;
+  }
+
+  .navBar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navBar li {
+      margin: 10px 0;
+  }
+
+  .contacts-nav {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .box {
+      margin-left: 0;
+      text-align: center;
+  }
+
+  .bike1,
+  .bike2 {
+      position: static;
+      transform: none;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 10px 0;
+  }
+
+  .company-contacts {
+      height: auto;
+      bottom: 0;
+  }
+}
+
+.comic-button {
+  display: inline-block;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff5252;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #000;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #fff;
+  color: #ff5252;
+  border: 2px solid #ff5252;
+  box-shadow: 5px 5px 0px #ff5252;
+}
+
+.comic-button:active {
+  background-color: #fcf414;
+  box-shadow: none;
+  transform: translateY(4px);
 }

@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .home-button-container a,
+  .user-button-container a,
+  .supplier-button-container a{
+            text-decoration: none; /* Remove underline */
+            color: #000;
+        }
+
+.white-container a,
+.admin-button-container a
+.stock-button-container a {
+    text-decoration: none; /* Remove underline */
+    color: #fff;
+}
+
+.none {
+    text-decoration: none;  
+    color: #000;
+}
+
+.none1{
+    text-decoration: none;
+    color: #fff;
+}
+
+.my-5 h1 {
+    margin-bottom: 20px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 3px solid #70bdca;
+}
+
+.content-container {
+    width: 79vw;
+    height: auto;
+    position: relative;
+    bottom: 2050vh;
+    left: 20vw;
+    overflow: hidden;
+    z-index: 3;
+    font-size: 20px;
+}
+
+  .horizontal-container {
+    position: absolute;
+    top: 0; /* Position at the top */
+    left: 20vw; /* Position it to the right of the vertical container */
+    width: 80vw; /* Width of the page minus the vertical container's width */
+    height: 50vh; /* Height set to 25% of the view height */
+    background-image: url('/img/2.jpg'); /* Background color */
+    z-index: 2; /* Set higher z-index for overlapping */
+    object-fit: cover;
+}
+
+.horizontal-container button {
+    margin: 0;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+}
+
+.white-container {
+    height: 10vh;
+    width:100%;
+    background-color: rgb(243, 52, 52);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 40vh;
+    border-top: 2px solid black;
+}
+
+.circle-container {
+    width: 300px;
+    height: 200px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    border: 2px solid #fff;
+  }
+  
+  .vertical-container {
+    background-color: #000; /* Adjust the background color as desired */
+    width: 20vw;
+    height: 2100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .circle-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brand-container {  
+    width: 100%; /* Take up the full width of vertical-container */
+    height: 200px; /* Match the height of the circle-container */
+    overflow: hidden; /* Hide any overflow */
+    position: relative;
+}
+
+.brand-container img {
+    width: 100%; /* Fill the width of the brand-container */
+    height: 100%; /* Fill the height of the brand-container */
+    object-fit: contain; /* Cover the container without stretching the image */
+}
+
+.home-button-container {
+    display: flex;
+    align-items: center; /* Aligns the button and icon vertically */
+}
+
+.home-icon {
+    width: 100%; /* Make the icon the same size as the button */
+    height: 100%; /* Match the height of the button */
+    max-width: 50px; /* Adjust max width according to your preference */
+    margin-right: 10px; /* Add margin between the icon and the button */
+    object-fit: contain;
+    position: relative;
+    right: 11%;
+}
+
+.user-button-container {
+    display: flex;
+    align-items: center; /* Aligns the button and icon vertically */
+}
+
+.user-icon {
+    width: 100%; /* Make the icon the same size as the button */
+    height: 100%; /* Match the height of the button */
+    max-width: 50px; /* Adjust max width according to your preference */
+    margin-right: 10px; /* Add margin between the icon and the button */
+    object-fit: contain;
+    position: relative;
+    right: 10%;
+}
+
+.supplier-button-container {
+    display: flex;
+    align-items: center; /* Aligns the button and icon vertically */
+}
+
+.supplier-icon {
+    width: 100%; /* Make the icon the same size as the button */
+    height: 100%; /* Match the height of the button */
+    max-width: 50px; /* Adjust max width according to your preference */
+    margin-right: 20px; /* Add margin between the icon and the button */
+    object-fit: contain;
+}
+
+.stock-button-container {
+    display: flex;
+    align-items: center; /* Aligns the button and icon vertically */
+}
+
+.stock-icon {
+    width: 100%; /* Make the icon the same size as the button */
+    height: 100%; /* Match the height of the button */
+    max-width: 70px; /* Adjust max width according to your preference */
+    object-fit: contain;
+    position: relative;
+    right: 2%;
+}
+
+.sales-button-container {
+    display: flex;
+    align-items: center; /* Aligns the button and icon vertically */
+}
+
+.sales-icon {
+    width: 100%; /* Make the icon the same size as the button */
+    height: 100%; /* Match the height of the button */
+    max-width: 70px; /* Adjust max width according to your preference */
+    object-fit: contain;
+    position: relative;
+    right: 2%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;    
+    max-width: 800px; /* Adjust this value to change the maximum width */
+    margin-top: 20px;
+    align-items: center;
+}
+
+.button {
+    padding: 1em 2em;
+    margin: 40px;   
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;  
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000;
+    transition: all 1000ms;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid #2c9caf;
+  }
+  
+  .button:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+    outline: 2px solid #70bdca;
+    box-shadow: 4px 5px 17px -4px #268391;
+  }
+  
+  .button::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background-color: #2c9caf;
+    transform: skewX(45deg);
+    z-index: -1;
+    transition: width 1000ms;
+  }
+  
+  .button:hover::before {
+    width: 250%;
+  }
+  
+  
+  .admin-button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.admin-button, .signout-button {
+    padding: 0.5em 1em;
+    font-size: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 5px;
+    text-align: right;
+    z-index: 5;
+}
+
+/* Initially hide the sign-out button */
+.signout-button {
+    display: none;
+}
+
+.scroll-to-top-container {
+    position: fixed; /* Set position to fixed */
+    bottom: 20px; /* Adjust bottom distance from the bottom of the viewport */
+    right: 20px; /* Adjust right distance from the right of the viewport */
+    z-index: 999; /* Set a high z-index to ensure it's above other content */
+}
+
+.scroll-to-top-button {
+    width: 50px; /* Set a wider width */
+    height: 50px; /* Set a taller height */
+    font-size: 24px; /* Increase font size */
+    background-color: #333; /* Adjust background color */
+    color: white; /* Set text color */
+    border: none;
+    border-radius: 50%; /* Make it a circle */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.scroll-to-top-button:hover {
+    background-color: #555; /* Darken background color on hover */
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+}
+
